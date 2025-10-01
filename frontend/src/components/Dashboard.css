@@ -1,0 +1,125 @@
+/* Layout wrapper */
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 264px;
+  background-color: #0a0f2a; /* darkblue substitute */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #334155;
+  text-align: center; /* border-slate-700 */
+}
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+.sidebar-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.sidebar-header p {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #cbd5e1; /* text-slate-300 */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+  flex: 1;
+  padding: 1rem;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav li + li {
+  margin-top: 0.75rem; /* space-y-3 */
+}
+
+/* Tab Buttons */
+.tab-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space-x-4 */
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem; /* rounded-xl */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cbd5e1; /* text-slate-300 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tab-btn:hover {
+  background-color: #1e293b; /* hover:bg-slate-800 */
+  color: white;
+  transform: scale(1.02);
+}
+.tab-btn.active {
+  background-color: #1e293b; /* bg-slate-800 */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.tab-btn.inactive {
+  /* bg-slate-800 */
+  color: red;
+}
+
+/* Icon Box */
+.icon-box {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #475569; /* bg-slate-700 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-box.active {
+  background-color: #3b82f6; /* bg-blue-500 */
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* optional if you don’t want scrollbars */
+}
+
+.gradient-line {
+  margin-bottom: 10px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffff, transparent);
+}
+.gradient-line1 {
+  margin-top: 15px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffff, transparent);
+}

@@ -1,0 +1,56 @@
+🚀 API Tracking Middleware
+
+A lightweight Node.js + Express middleware to track API usage, duration, and request logs.
+Built for developers who want visibility into their APIs without heavy overhead.
+
+✨ Features
+
+🔑 API Key Validation – Secure your APIs by validating requests with predefined API keys.
+
+⏱️ Request Duration Tracking – Automatically logs how long each API request takes.
+
+📊 API Usage Logging – Capture and store details like endpoint, method, status code, and response time.
+
+🛠️ Easy Integration – Just plug it into your Express app.
+
+📡 Monitor & Debug – Perfect for debugging slow APIs and monitoring performance.
+
+🌐 Multi-Application Support\*\* – Can handle APIs from "two different external applications" as of now.
+
+⚡ Installation
+npm i apitrace
+import { trackMiddleware } from "apitrace";
+app.use(trackMiddleware({ apiKey: "hardcoded-test-key" }));
+or
+app.use(trackMiddleware({ apiKey: "9FrsPB3OQIZYP2h2qzF8UF" }));
+
+🎯 Why This Project?
+
+This project was built to simplify API monitoring for developers.
+Instead of relying on heavy external tools, this middleware lets you:
+
+🔍 Understand API performance at a glance
+
+🧑‍💻 Improve debugging efficiency
+
+📈 Collect metrics for analytics
+
+🚀 Add security with API key validation
+
+It’s a developer-first tool that balances simplicity with functionality.
+
+💡 Ideal Use Cases
+
+Backend API monitoring
+
+Debugging response delays
+
+Learning middleware concepts
+
+Interview showcase project 🚀
+
+👨‍💻 Author
+
+Built with ❤️ by Vivek S
+
+Passionate about backend development, performance optimization, and developer experience.
