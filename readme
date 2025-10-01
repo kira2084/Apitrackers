@@ -23,9 +23,9 @@ Built for developers who want visibility into their APIs without heavy overhead.
 
 ⚡ Installation
 npm i apitrace
-import { trackMiddleware } from "apitrace";
+import { trackMiddleware } from "apitraces";
                 or
-const { trackMiddleware } = require("apitrace");
+const { trackMiddleware } = require("apitraces");
 app.use(trackMiddleware({ apiKey: "hardcoded-test-key" }));
 or
 app.use(trackMiddleware({ apiKey: "9FrsPB3OQIZYP2h2qzF8UF" }));
