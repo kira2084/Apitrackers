@@ -17,9 +17,15 @@ Built for developers who want visibility into their APIs without heavy overhead.
 
 🌐 Multi-Application Support\*\* – Can handle APIs from "two different external applications" as of now.
 
+✅ It fetches logs from a backend, groups them by API, and visualizes daily status codes using intuitive icons (✅ green check for success, 🟡 yellow triangle for informational, 🟠 orange circle for redirects, ❌ red cross for errors).
+
+📦 The project also integrates a custom NPM package created by me to simplify tracking and logging of API requests.
+
 ⚡ Installation
 npm i apitrace
 import { trackMiddleware } from "apitrace";
+                or
+const { trackMiddleware } = require("apitrace");
 app.use(trackMiddleware({ apiKey: "hardcoded-test-key" }));
 or
 app.use(trackMiddleware({ apiKey: "9FrsPB3OQIZYP2h2qzF8UF" }));
@@ -46,8 +52,6 @@ Backend API monitoring
 Debugging response delays
 
 Learning middleware concepts
-
-Interview showcase project 🚀
 
 👨‍💻 Author
 
